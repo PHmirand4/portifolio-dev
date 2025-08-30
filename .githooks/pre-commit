@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# pre-commit hook: bloqueia commits que adicionem arquivos de ambiente sensíveis
+# Permite arquivos como .env.example (templates), bloqueia: .env, .env.local e .env.*.local
+
+staged_files=$(git diff --cached --name-only)
+
+while IFS= read -r file; do
+  [ -z "$file" ] && continue
+  base=$(basename "$file")
+
+  if [ "$base" = ".env" ] || [ "$base" = ".env.local" ] || [[ "$base" == .env.*.local ]]; then
+    echo "\nERROR: Attempt to commit sensitive .env file detected: $file"
+    echo "Remove the file from the commit or add it to .gitignore. Allowed: .env.example"
+    exit 1
+  fi
+done <<< "$staged_files"
+
+# passe por padrão
+exit 0
