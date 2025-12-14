@@ -226,12 +226,11 @@ function App() {
       subtitle: "Construindo soluções de software com foco em inovação e usabilidade",
       location: "Rio de Janeiro, Brasil",
       email: "p.h.miranda1712@gmail.com",
-      bio: "Estudante de Engenharia da Computação com trajetória que evoluiu do suporte técnico ao desenvolvimento de software completo. Focado em criar soluções práticas, desde apps mobile (Flutter/Dart) e lojas virtuais até automações com IA para otimizar processos de negócio.",
+      bio: "Estudante de Engenharia da Computação com trajetória que evoluiu do suporte técnico ao desenvolvimento de software completo. Focado em criar soluções práticas, inovadoras e centradas no usuário. Apaixonado por tecnologia, busco constantemente aprimorar minhas habilidades e contribuir para projetos que façam a diferença.",
       image: "/api/placeholder/300/300" // Altere para o caminho da sua imagem
     },
     social: {
       github: "https://github.com/PHmirand4",
-      linkedin: "https://www.linkedin.com/in/pedro-henrique-miranda-de-oliveira",
       email: "mailto:p.h.miranda1712@gmail.com"
     },
     skills: {
@@ -243,14 +242,13 @@ function App() {
     education: {
       degree: "Bacharelado em Engenharia da Computação",
       institution: "Instituto Federal Fluminense (IFF)",
-      period: "2022 - Atual",
-      status: "Cursando - 7º Período"
+    
     },
     projects: [
       {
         id: 1,
         title: "App de Gestão Rural - Agroecologia_5G (Bolsa PIBITI/CNPq)",
-        description: "Desenvolvimento de um aplicativo móvel para gestão de atividades agrícolas com arquitetura offline-first, focado em agricultores familiares.",
+        description: "Aplicativo móvel para gestão de atividades agrícolas com arquitetura offline-first, desenvolvido para auxiliar agricultores familiares no controle de suas atividades rurais.",
         technologies: ["Flutter", "Dart", "Firebase", "SQLite", "Figma"],
         status: "Em desenvolvimento",
         github: "https://github.com/PHmirand4",
@@ -260,7 +258,7 @@ function App() {
       {
         id: 2,
         title: "App de Agendamento para Barbearia (Freelance)",
-        description: "Solução móvel completa (Flutter/Firebase) para agendamento de serviços, migrando o sistema de um website para uma plataforma móvel nativa.",
+        description: "Aplicativo móvel completo para agendamento de serviços de barbearia, substituindo o sistema web anterior por uma solução móvel nativa mais eficiente.",
         technologies: ["Flutter", "Dart", "Firebase"],
         status: "Concluído e em uso",
         github: "https://github.com/PHmirand4/Rei_Du_Corte",
@@ -270,7 +268,7 @@ function App() {
       {
         id: 3,
         title: "Loja Virtual para Café Artesanal (NuvemShop)",
-        description: "Desenvolvimento de loja virtual para produtor de cafés especiais, incluindo personalização de layout, cadastro de produtos com SEO e configuração de pagamentos (Mercado Pago).",
+        description: "Desenvolvimento completo de loja virtual para produtor de cafés especiais, incluindo personalização de layout responsivo, cadastro de produtos com otimização SEO e integração com gateway de pagamento.",
         technologies: ["NuvemShop", "Web Design", "E-commerce", "SEO"],
         status: "Concluído",
         github: null,
@@ -316,7 +314,7 @@ function App() {
         company: "Laboratório Maker - Instituto Federal Fluminense (FAPERJ)",
         period: "Março 2023 - Março 2025",
         type: "Bolsa de Inovação",
-        description: "Atuação no mapeamento de processos (criação de POPs e fluxogramas) e na prestação de suporte técnico de TI (hardware, software, redes) para todo o campus.",
+        description: "Responsável pelo mapeamento de processos (criação de POPs e fluxogramas) e prestação de suporte técnico especializado em TI para todo o campus. Atuação em projetos de inovação tecnológica com fomento FAPERJ.",
         achievements: [
           "Criei documentação técnica (POPs) para equipamentos de prototipagem",
           "Mapeei e otimizei fluxos de trabalho do laboratório",

@@ -18,7 +18,7 @@ export default function AnalyticsLoader() {
       for (const name of candidates) {
         try {
           // tentativa de import dinâmico
-          const mod = await import(name)
+          const mod = await import(/* @vite-ignore */ name)
           const Comp = mod?.Analytics || mod?.default || null
           if (Comp && mounted) {
             setAnalyticsComponent(() => Comp)
